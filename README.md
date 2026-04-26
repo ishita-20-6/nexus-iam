@@ -52,7 +52,10 @@ cd nexus-iam
 
 * 2. Install All Dependencies
 
----Install packages for both folders:
+`---`
+Install packages for both folders:
+`---`
+
 
 Frontend Setup:
 
