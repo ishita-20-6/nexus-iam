@@ -26,7 +26,7 @@ Security: JWT & OAuth 2.0
 
 DevOps: Docker & GitHub Actions
 
-# 📂 Project Structure
+📂 Project Structure
 
 Nexus-Root
 ├── 📁 apps           # Frontend and Mobile apps
@@ -36,7 +36,7 @@ Nexus-Root
 └── README.md         # Project entry point
 
 
-⚙️ Installation Guide
+# ⚙️ Installation Guide
 
 Project ko local machine par setup karne ke liye niche diye gaye steps follow karein:
 
