@@ -1,8 +1,8 @@
-🌌 Nexus: The Future of Connected Ecosystems
+# 🌌 Nexus: The Future of Connected Ecosystems
 
 Nexus ek cutting-edge platform hai jo decentralized connectivity aur seamless integration ko focus karta hai. Ye project modern web technologies aur robust architecture ka use karke users ko ek unified experience provide karta hai.
 
-🚀 Key Features
+# 🚀 Key Features
 
 Decentralized Hub: Bina kisi single point of failure ke data ko sync aur manage karein.
 
@@ -14,7 +14,7 @@ Universal API: Kisi bhi third-party service ke sath plug-and-play integration.
 
 Cross-Platform Support: Mobile, Web, aur Desktop par ek jaisa smooth experience.
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 Technology
 
