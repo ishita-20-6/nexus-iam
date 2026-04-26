@@ -85,3 +85,20 @@ npm run dev
 ```bash
 npm start
 ```
+
+## 🤝 Contributing
+- Fork the project.
+
+- Create your Feature Branch (git checkout -b feature/AmazingFeature).
+
+- Commit your changes (git commit -m 'Add some AmazingFeature').
+
+- Push to the branch (git push origin feature/AmazingFeature).
+
+- Open a Pull Request.
+
+## 📜 License
+
+Distributed under the MIT License.
+
+© 2024 Nexus IAM - Developed with a focus on Security and Scalability.
