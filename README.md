@@ -18,15 +18,15 @@ Scalable DB: Built on Supabase for robust data handling.
 
 # 🛠 Tech Stack
 
-Frontend: React.js (Vite), Tailwind CSS, Framer Motion, Recharts
+- Frontend: React.js (Vite), Tailwind CSS, Framer Motion, Recharts
 
-Backend: Node.js, Express
+- Backend: Node.js, Express
 
-Authentication: Clerk
+- Authentication: Clerk
 
-Database: Supabase
+- Database: Supabase
 
-Icons: Lucide React
+- Icons: Lucide React
 
 📂 Project Structure
 
@@ -39,74 +39,47 @@ nexus-iam/
 ├── server/                # Node.js Backend
 └── .gitignore             # Security filters
 
+## ⚙️ Installation & Setup
 
-# ⚙️ Installation & Setup
+Follow these steps carefully:
 
-Follow these bolded steps carefully to get the project running:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ishita-20-6/nexus-iam.git
+cd nexus-iam
+```
 
-* 1. Clone the Repository
+### 2. Install Dependencies
 
-git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
-```cd nexus-iam
-
-
-*  2. Install All Dependencies
-
-Install packages for both folders:
-
-
-
-Frontend Setup:
-
-```cd client
+#### Frontend Setup
+```bash
+cd client
 npm install
+```
 
-
-Backend Setup:
-
+#### Backend Setup
+```bash
 cd ../server
 npm install
+```
 
+### 3. Configure Environment Variables
+Create a `.env` file inside the client folder:
 
-3. Configure Environment Variables
-
-Create a .env file inside the client folder and paste your keys:
-
+```bash
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_key
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+```
 
+### 4. Start Development Servers
 
-4. Start Development Servers
-
-Frontend (Client folder):
-
+#### Frontend
+```bash
 npm run dev
+```
 
-
-Backend (Server folder):
-
+#### Backend
+```bash
 npm start
-
-
-🤝 Contributing
-
-Fork the repo.
-
-Create a Feature Branch.
-
-Commit changes.
-
-Open a Pull Request.
-
-📜 License
-
-Distributed under the MIT License.
-
-📧 Contact
-
-Maintainer: ishita-20-6
-
-Repo: Nexus-IAM Source
-
-© 2024 Nexus IAM - Secured & Scalable Architecture
+```
