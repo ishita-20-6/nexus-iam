@@ -28,16 +28,17 @@ Scalable DB: Built on Supabase for robust data handling.
 
 - Icons: Lucide React
 
-📂 Project Structure
+## 📂 Project Structure
 
+```text
 nexus-iam/
-├── client/                # React Frontend (Vite)
-│   └── src/
-│       ├── components/    # Governance, Logs, Charts, etc.
-│       ├── supabase/      # Client Configuration
-│       └── App.jsx        # Routing & Logic
-├── server/                # Node.js Backend
-└── .gitignore             # Security filters
+├── client/              # React Frontend (Vite)
+│   ├── src/
+│   │   ├── components/  # UserGovernance, AuditLogs, Charts, etc.
+│   │   ├── supabase/    # Supabase Client Configuration
+│   │   └── App.jsx      # Main application logic & routing
+├── server/              # Node.js Backend / Server Configuration
+└── .gitignore           # Security: Ensures .env and node_modules are not tracked
 
 ## ⚙️ Installation & Setup
 
