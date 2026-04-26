@@ -44,5 +44,3 @@ Follow these steps to set up the project locally on your machine:
 ```bash
 git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
 cd nexus-iam
----
----
