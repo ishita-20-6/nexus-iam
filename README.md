@@ -16,31 +16,17 @@ Cross-Platform Support: Mobile, Web, aur Desktop par ek jaisa smooth experience.
 
 # 🛠 Tech Stack
 
-Technology
+Frontend: React.js / Next.js with Tailwind CSS
 
-Usage
+Backend: Node.js (Express)
 
-Frontend
+Database: MongoDB / PostgreSQL
 
-React.js / Next.js with Tailwind CSS
+Security: JWT & OAuth 2.0
 
-Backend
+DevOps: Docker & GitHub Actions
 
-Node.js (Express)
-
-Database
-
-MongoDB / PostgreSQL
-
-Security
-
-JWT & OAuth 2.0
-
-DevOps
-
-Docker & GitHub Actions
-
-📂 Project Structure
+# 📂 Project Structure
 
 Nexus-Root
 ├── 📁 apps           # Frontend and Mobile apps
