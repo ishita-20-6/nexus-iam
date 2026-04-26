@@ -1,105 +1,110 @@
-# 🌌 Nexus: The Future of Connected Ecosystems
+## 🌌 Nexus IAM: Identity & Access Management System
 
-Nexus ek cutting-edge platform hai jo decentralized connectivity aur seamless integration ko focus karta hai. Ye project modern web technologies aur robust architecture ka use karke users ko ek unified experience provide karta hai.
+Nexus IAM is a high-performance Identity and Access Management solution designed for secure user governance, audit logging, and real-time analytics. It leverages modern cloud technologies to ensure organization-wide security.
 
 # 🚀 Key Features
 
-Decentralized Hub: Bina kisi single point of failure ke data ko sync aur manage karein.
+User Governance: Advanced lifecycle management for users and roles.
 
-Real-time Analytics: Live data visualization aur performance tracking dashboards.
+RBAC: Role-Based Access Control for fine-grained permissions.
 
-Nexus Key Security: Advanced authentication mechanism jo aapke assets ko secure rakhta hai.
+Audit Logs: Complete history of system changes and access.
 
-Universal API: Kisi bhi third-party service ke sath plug-and-play integration.
+Analytics Dashboard: Interactive charts for data-driven decisions.
 
-Cross-Platform Support: Mobile, Web, aur Desktop par ek jaisa smooth experience.
+Secure Auth: Powered by Clerk for seamless identity management.
+
+Scalable DB: Built on Supabase for robust data handling.
 
 # 🛠 Tech Stack
 
-Frontend: React.js / Next.js with Tailwind CSS
+Frontend: React.js (Vite), Tailwind CSS, Framer Motion, Recharts
 
-Backend: Node.js (Express)
+Backend: Node.js, Express
 
-Database: MongoDB / PostgreSQL
+Authentication: Clerk
 
-Security: JWT & OAuth 2.0
+Database: Supabase
 
-DevOps: Docker & GitHub Actions
+Icons: Lucide React
 
 📂 Project Structure
 
-Nexus-Root
-├── 📁 apps           # Frontend and Mobile apps
-├── 📁 packages       # Shared logic and UI components
-├── 📁 services       # Backend microservices
-├── 📁 docs           # Technical documentation
-└── README.md         # Project entry point
+nexus-iam/
+├── client/                # React Frontend (Vite)
+│   └── src/
+│       ├── components/    # Governance, Logs, Charts, etc.
+│       ├── supabase/      # Client Configuration
+│       └── App.jsx        # Routing & Logic
+├── server/                # Node.js Backend
+└── .gitignore             # Security filters
 
 
-# ⚙️ Installation Guide
+# ⚙️ Installation & Setup
 
-Project ko local machine par setup karne ke liye niche diye gaye steps follow karein:
+Follow these bolded steps carefully to get the project running:
 
-Repo Clone Karein:
+* 1. Clone the Repository
 
-git clone [https://github.com/your-username/nexus.git](https://github.com/your-username/nexus.git)
-cd nexus
+git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
+cd nexus-iam
 
 
-Dependencies Install Karein:
+* 2. Install All Dependencies
 
+`---`Install packages for both folders:
+
+Frontend Setup:
+
+cd client
 npm install
 
 
-Environment Variables Setup Karein:
-.env.example file ko .env mein rename karein aur apni API keys fill karein.
+Backend Setup:
 
-cp .env.example .env
+cd ../server
+npm install
 
 
-Development Server Start Karein:
+3. Configure Environment Variables
+
+Create a .env file inside the client folder and paste your keys:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_key
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+
+
+4. Start Development Servers
+
+Frontend (Client folder):
 
 npm run dev
 
 
-📖 Usage
+Backend (Server folder):
 
-Nexus ko use karna bahut simple hai:
+npm start
 
-Dashboard par login karein.
-
-Apna pehla 'Node' create karein.
-
-Nexus Key generate karein integration ke liye.
-
-Live data stream monitor karna shuru karein.
 
 🤝 Contributing
 
-Hum Nexus ko behtar banane ke liye contributors ka swagat karte hain!
+Fork the repo.
 
-Fork karein.
+Create a Feature Branch.
 
-Nayi feature branch banayein (git checkout -b feature/AmazingFeature).
+Commit changes.
 
-Changes commit karein (git commit -m 'Add some AmazingFeature').
-
-Branch push karein (git push origin feature/AmazingFeature).
-
-Pull Request open karein.
+Open a Pull Request.
 
 📜 License
 
-Ye project MIT License ke under distributed hai. Zyada jaankari ke liye LICENSE file dekhein.
+Distributed under the MIT License.
 
-📞 Contact & Support
+📧 Contact
 
-Agar aapko koi help chahiye ya koi query hai, toh humse judiye:
+Maintainer: ishita-20-6
 
-Email: support@nexus-core.io
+Repo: Nexus-IAM Source
 
-Twitter: @NexusProject
-
-Discord: Join our Community
-
-Made with ❤️ by the Nexus Team.
+© 2024 Nexus IAM - Secured & Scalable Architecture
