@@ -34,6 +34,8 @@ nexus-iam/
 ├── server/              # Node.js Backend / Server Configuration
 └── .gitignore           # Security: Ensures .env and node_modules are not tracked
 
+`---`
+
 ## ⚙️ Installation & Setup
 Follow these steps to set up the project locally:
 
