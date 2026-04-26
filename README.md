@@ -50,7 +50,7 @@ git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishi
 ```cd nexus-iam
 
 
-* 2. Install All Dependencies
+*  2. Install All Dependencies
 
 Install packages for both folders:
 
@@ -58,7 +58,7 @@ Install packages for both folders:
 
 Frontend Setup:
 
-cd client
+```cd client
 npm install
 
 
