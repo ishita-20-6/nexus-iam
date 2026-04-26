@@ -34,6 +34,17 @@ nexus-iam/
 ├── server/              # Node.js Backend / Server Configuration
 └── .gitignore           # Security: Ensures .env and node_modules are not tracked
 
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend**: React.js (Vite), Tailwind CSS, Lucide Icons, Recharts.
+* **Backend/Database**: Supabase (PostgreSQL & Real-time engine).
+* **Authentication**: Clerk Auth.
+* **Animations**: Framer Motion.
+
+---
+
 `---`
 
 ## ⚙️ Installation & Setup
