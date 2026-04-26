@@ -39,6 +39,7 @@ nexus-iam/
 │   │   └── App.jsx      # Main application logic & routing
 ├── server/              # Node.js Backend / Server Configuration
 └── .gitignore           # Security: Ensures .env and node_modules are not tracked
+```
 
 ## ⚙️ Installation & Setup
 
