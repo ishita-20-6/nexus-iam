@@ -33,3 +33,37 @@ nexus-iam/
 │   │   └── App.jsx      # Main application logic & routing
 ├── server/              # Node.js Backend / Server Configuration
 └── .gitignore           # Security: Ensures .env and node_modules are not tracked
+
+# ⚙️ Installation & Setup
+Follow these steps to set up the project locally:
+
+1. Clone the Repository
+Bash
+git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
+cd nexus-iam
+2. Install Dependencies
+You need to install dependencies for both the frontend and the backend:
+
+Frontend Setup:
+
+Bash
+cd client
+npm install
+Backend Setup:
+
+Bash
+cd ../server
+npm install
+3. Environment Variables (.env)
+Create a .env file inside the client directory and add your API keys:
+
+Code snippet
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+4. Run the Development Server
+Bash
+# To start the frontend (run from the client folder)
+npm run dev
+🛡️ Security Best Practices
+This repository is configured to ignore .env files to prevent the leaking of private API keys. When deploying, ensure that you set these environment variables manually in your hosting provider's dashboard (e.g., Vercel, Netlify).
