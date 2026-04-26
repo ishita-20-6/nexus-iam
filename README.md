@@ -1,30 +1,54 @@
-# 🛡️ Nexus.IAM - Identity & Access Management System
+\documentclass[11pt, a4paper]{article}
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white)
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
 
-Nexus.IAM is a modern, secure, and real-time Identity & Access Management (IAM) dashboard. It is designed to provide administrators with a comprehensive overview of system security, user governance, and real-time activity tracking.
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
 
-## 🚀 Key Features
+% Code block styling
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+\lstset{
+    backgroundcolor=\color{codegray},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{lightgray},
+    marginparsep=5pt,
+    xleftmargin=10pt
+}
 
-- **Real-time Audit Logs**: Leverages Supabase Real-time to track user activities and security events with interactive live graphs.
-- **User Governance**: Robust multi-level access control. Administrators can promote users (e.g., Viewer to Admin) or revoke access instantly.
-- **Role-Based Access Control (RBAC)**: Securely restricts sensitive pages and administrative actions based on user roles.
-- **Aesthetic UI/UX**: Designed with a "Bento Grid" layout, utilizing Tailwind CSS for a sleek dark mode and Framer Motion for smooth transitions.
-- **Advanced Authentication**: Integrated with Clerk for secure login, session management, and multi-factor authentication support.
+\begin{document}
 
-## 🛠️ Tech Stack
+\begin{center}
+    {\Huge \textbf{Nexus.IAM}} \\
+    \vspace{0.5cm}
+    {\Large Identity \& Access Management System} \\
+    \vspace{1cm}
+\end{center}
 
-- **Frontend**: React.js (Vite), Tailwind CSS, Lucide Icons, Recharts (Data Visualization).
-- **Backend/Database**: Supabase (PostgreSQL & Real-time engine).
-- **Authentication**: Clerk Auth.
-- **Animations**: Framer Motion.
+\section*{Project Overview}
+Nexus.IAM is a modern, secure, and real-time Identity \& Access Management (IAM) dashboard. It provides administrators with a comprehensive overview of system security, user governance, and real-time activity tracking using a sleek, interactive interface.
 
-## 📂 Project Structure
+\section*{Key Features}
+\begin{itemize}
+    \item \textbf{Real-time Audit Logs}: Powered by Supabase Real-time to track user activities and security events with live data visualization.
+    \item \textbf{User Governance}: Full control over user roles. Admins can promote users (Viewer to Admin) or revoke access instantly.
+    \item \textbf{Role-Based Access Control (RBAC)}: Securely restricts sensitive administrative actions based on verified user roles.
+    \item \textbf{Modern UI/UX}: Built with a "Bento Grid" layout, utilizing Tailwind CSS for dark mode and Framer Motion for smooth animations.
+    \item \textbf{Secure Authentication}: Integrated with Clerk for robust session management and multi-factor authentication.
+\end{itemize}
 
-```text
+\section*{Project Structure}
+\begin{lstlisting}[language=bash]
 nexus-iam/
 ├── client/              # React Frontend (Vite)
 │   ├── src/
@@ -32,15 +56,54 @@ nexus-iam/
 │   │   ├── supabase/    # Supabase Client Configuration
 │   │   └── App.jsx      # Main application logic & routing
 ├── server/              # Node.js Backend / Server Configuration
-└── .gitignore           # Security: Ensures .env and node_modules are not tracked
+└── .gitignore           # Security: Prevents .env and node_modules
+\end{lstlisting}
 
----
+\section*{Tech Stack}
+\begin{itemize}
+    \item \textbf{Frontend}: React.js (Vite), Tailwind CSS, Lucide Icons, Recharts.
+    \item \textbf{Backend/Database}: Supabase (PostgreSQL \& Real-time engine).
+    \item \textbf{Authentication}: Clerk Auth.
+    \item \textbf{Animations}: Framer Motion.
+\end{itemize}
 
-## ⚙️ Installation & Setup
+\section*{Installation \& Setup}
 
-Follow these steps to set up the project locally on your machine:
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
+\subsection*{1. Clone the Repository}
+\begin{lstlisting}[language=bash]
+git clone https://github.com/ishita-20-6/nexus-iam.git
 cd nexus-iam
+\end{lstlisting}
+
+\subsection*{2. Install Dependencies}
+\textbf{Frontend Setup:}
+\begin{lstlisting}[language=bash]
+cd client
+npm install
+\end{lstlisting}
+
+\textbf{Backend Setup:}
+\begin{lstlisting}[language=bash]
+cd ../server
+npm install
+\end{lstlisting}
+
+\subsection*{3. Environment Variables (.env)}
+Create a \texttt{.env} file inside the \texttt{client} directory:
+\begin{lstlisting}
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+\end{lstlisting}
+
+\subsection*{4. Run the Development Server}
+\begin{lstlisting}[language=bash]
+npm run dev
+\end{lstlisting}
+
+\vspace{2cm}
+\begin{center}
+    \textit{Developed with ❤️ by Ishita}
+\end{center}
+
+\end{document}
