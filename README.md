@@ -47,14 +47,13 @@ Follow these bolded steps carefully to get the project running:
 * 1. Clone the Repository
 
 git clone [https://github.com/ishita-20-6/nexus-iam.git](https://github.com/ishita-20-6/nexus-iam.git)
-cd nexus-iam
+```cd nexus-iam
 
 
 * 2. Install All Dependencies
 
----
 Install packages for both folders:
----
+
 
 
 Frontend Setup:
